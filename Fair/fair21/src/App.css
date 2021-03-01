@@ -9,3 +9,12 @@
   color: white;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+html::-webkit-scrollbar {
+  display: none;
+}

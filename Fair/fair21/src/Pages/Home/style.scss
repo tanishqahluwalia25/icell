@@ -1,3 +1,140 @@
-header{
-    background-color: black;
+.home {
+    height: 100vh !important;
+    .rot-text {
+        color: black;
+        font-size: 3rem;
+    }
+    .div1 {
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+    .rot {
+        padding: auto;
+        margin-left: -6rem;
+    }
+    img {
+        margin-right: -8rem;
+        // display: inline-block;
+        height: 30rem;
+        // width: 25rem;
+    }
+    .row1{
+        margin-top: 6rem;
+    }
+    p.heading {
+        position: absolute;
+        color: white;
+        background-color: rgb(224, 37, 31);
+        padding: 3px;
+        font-size: 2.5rem;
+        left: 9rem;
+        top: 10rem;
+    }
+    .poster {
+        height: 35rem;
+        width: 25rem;
+        background-color: green;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            object-fit: cover;
+            height: 35rem;
+            margin-left: -10rem;
+            // filter: grayscale(0.71);
+        }
+    }
+    .poster2 {
+        position: absolute;
+        background-color: rgba(15, 15, 15, 0.39);
+        height: 35rem;
+        width: 25rem;
+    }
+    .line {
+        width: 4px;
+        height: 30rem;
+        border: 2px solid black;
+        animation-name: line-grow;
+        animation-duration: 3s;
+    }
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes line-grow {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 30rem;
+    }
+}
+
+
+@media screen and (max-width:800px){
+.home {
+    height: 100vh !important;
+    .rot-text {
+        color: black;
+        font-size: 3rem;
+    }
+    .div1 {
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+    .rot {
+        padding: auto;
+        margin-left: -6rem;
+    }
+    img {
+        margin-right: 0rem;
+        // display: inline-block;
+        height: 30rem;
+        // width: 25rem;
+    }
+    .row1{
+        margin-top: 6rem;
+    }
+    p.heading {
+        position: absolute;
+        color: white;
+        background-color: rgb(224, 37, 31);
+        padding: 3px;
+        font-size: 2.5rem;
+        left: 9rem;
+        top: 10rem;
+    }
+    .poster {
+        height: 35rem;
+        width: 25rem;
+        background-color: green;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            object-fit: cover;
+            height: 35rem;
+            margin-left: -10rem;
+            // filter: grayscale(0.71);
+        }
+    }
+    .poster2 {
+        position: absolute;
+        background-color: rgba(15, 15, 15, 0.39);
+        height: 35rem;
+        width: 25rem;
+    }
+    .line {
+        width: 4px;
+        height: 30rem;
+        border: 2px solid black;
+        animation: none;
+        visibility: hidden;
+    }
+}
+
 }
