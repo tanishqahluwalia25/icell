@@ -1,16 +1,36 @@
 .home {
     height: 100vh !important;
     .rot-text {
+        display: block;
         color: black;
-        font-size: 3rem;
+        font-size: 5rem;
+        font-weight: 600;
+        // text-transform: uppercase;
+        color: grey;
+
+        @media screen and (max-width:800px){
+            &{
+                font-size: 2rem;
+                margin-left: 2rem;
+            }
+        }
+    }
+    .icon{
+        color: rgba(128, 128, 128, 0.815);
     }
     .div1 {
         margin-right: 5rem;
         margin-left: 5rem;
     }
-    .rot {
-        padding: auto;
-        margin-left: -6rem;
+    #rot {
+        background: linear-gradient(-70deg, #f39316, #ec15ec);
+        color: white;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.651) ;
+        &:hover{
+            background: linear-gradient(-70deg, #f39316c0, #ec15ecce);
+        }
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
     }
     img {
         margin-right: -8rem;
@@ -18,13 +38,13 @@
         height: 30rem;
         // width: 25rem;
     }
-    .row1{
+    .row1 {
         margin-top: 6rem;
     }
     p.heading {
         position: absolute;
         color: white;
-        background-color: rgb(224, 37, 31);
+        background-color: rgb(238, 85, 39);
         padding: 3px;
         font-size: 2.5rem;
         left: 9rem;
@@ -74,67 +94,73 @@
     }
 }
 
-
-@media screen and (max-width:800px){
-.home {
-    height: 100vh !important;
-    .rot-text {
-        color: black;
-        font-size: 3rem;
-    }
-    .div1 {
-        margin-right: 5rem;
-        margin-left: 5rem;
-    }
-    .rot {
-        padding: auto;
-        margin-left: -6rem;
-    }
-    img {
-        margin-right: 0rem;
-        // display: inline-block;
-        height: 30rem;
-        // width: 25rem;
-    }
-    .row1{
-        margin-top: 6rem;
-    }
-    p.heading {
-        position: absolute;
-        color: white;
-        background-color: rgb(224, 37, 31);
-        padding: 3px;
-        font-size: 2.5rem;
-        left: 9rem;
-        top: 10rem;
-    }
-    .poster {
-        height: 35rem;
-        width: 25rem;
-        background-color: green;
-        overflow: hidden;
-        position: relative;
-
+@media screen and (max-width: 800px) {
+    .home {
+        height: 100vh !important;
+    
+        .div1 {
+            margin-right: 5rem;
+            margin-left: 5rem;
+        }
         img {
-            object-fit: cover;
+            margin-right: 0rem;
+            // display: inline-block;
+            height: 30rem;
+            // width: 25rem;
+        }
+        .row1 {
+            margin-top: 6rem;
+        }
+        p.heading {
+            position: absolute;
+            color: white;
+            background-color: rgb(243, 126, 49);
+            padding: 3px;
+            font-size: 2.5rem;
+            left: 9rem;
+            top: 10rem;
+        }
+        .poster {
             height: 35rem;
-            margin-left: -10rem;
-            // filter: grayscale(0.71);
+            width: 25rem;
+            background-color: green;
+            overflow: hidden;
+            position: relative;
+
+            img {
+                object-fit: cover;
+                height: 35rem;
+                margin-left: -10rem;
+                // filter: grayscale(0.71);
+            }
+        }
+        .poster2 {
+            position: absolute;
+            background-color: rgba(15, 15, 15, 0.39);
+            height: 35rem;
+            width: 25rem;
+        }
+        .line {
+            width: 4px;
+            height: 30rem;
+            border: 2px solid black;
+            animation: none;
+            visibility: hidden;
         }
     }
-    .poster2 {
-        position: absolute;
-        background-color: rgba(15, 15, 15, 0.39);
-        height: 35rem;
-        width: 25rem;
-    }
-    .line {
-        width: 4px;
-        height: 30rem;
-        border: 2px solid black;
-        animation: none;
-        visibility: hidden;
-    }
+
+
 }
 
+
+#text1{
+    position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+
+#shadow{
+    background-color: #ec15ec;
+    box-shadow: 0px 11px 5px rgba(0, 0, 0, 0.137);
 }
